@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/adaptive.css">
 </head>
 <body>
 <div id="body-container">
-
     <div id="main">
         <div id="main-container">
             <header>
@@ -104,19 +104,6 @@
                         </svg>
                     </span>
                 </div>
-            </div>
-            <div id="up" class="hidden">
-                <a href="#main">
-                    <div class="up-button">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                             viewBox="0 0 443.52 443.52" style="enable-background:new 0 0 443.52 443.52;"
-                             xml:space="preserve"><g><g>
-                        <path d="M336.226,209.591l-204.8-204.8c-6.78-6.548-17.584-6.36-24.132,0.42c-6.388,6.614-6.388,17.099,0,23.712l192.734,192.734
-		                    L107.294,414.391c-6.663,6.664-6.663,17.468,0,24.132c6.665,6.663,17.468,6.663,24.132,0l204.8-204.8
-		                    C342.889,227.058,342.889,216.255,336.226,209.591z"/></g></g>
-                </svg>
-                    </div>
-                </a>
             </div>
         </div>
     </div>
@@ -480,6 +467,11 @@
             <h2>
                 Ждем вас <span>в нашей винодельне!</span>
             </h2>
+            <div id="tours-options">
+                <button class="tour-option btn-empty active">Экскурсия 1</button>
+                <button class="tour-option btn-empty">Экскурсия 2</button>
+                <button class="tour-option btn-empty">Экскурсия 3</button>
+            </div>
             <div id="tours-slides">
                 <div id="tours_prev" class="prev-btn">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
@@ -1133,31 +1125,15 @@
 		                    	C342.889,227.058,342.889,216.255,336.226,209.591z"/></g></g>
                         </svg>
             </div>
-            <div class="gallery-big-img">
-                <img src="images/gallery/gallery_big_1.png" alt="landscape">
-            </div>
-            <div class="gallery-big-img hidden">
-                <img src="images/gallery/gallery_big_2.png" alt="landscape">
-            </div>
-            <div class="gallery-big-img hidden">
-                <img src="images/gallery/gallery_big_3.png" alt="landscape">
-            </div>
-            <div class="gallery-big-img hidden">
-                <img src="images/gallery/gallery_big_4.png" alt="landscape">
-            </div>
+            <div id="gallery-big-img-1" class="gallery-big-img"></div>
+            <div id="gallery-big-img-2" class="gallery-big-img hidden"></div>
+            <div id="gallery-big-img-3" class="gallery-big-img hidden"></div>
+            <div id="gallery-big-img-4" class="gallery-big-img hidden"></div>
             <div id="gallery-thumbs">
-                <div class="gallery-thumb active">
-                    <img src="images/gallery/gallery_small_1.png" alt="landscape">
-                </div>
-                <div class="gallery-thumb">
-                    <img src="images/gallery/gallery_small_2.png" alt="landscape">
-                </div>
-                <div class="gallery-thumb">
-                    <img src="images/gallery/gallery_small_3.png" alt="landscape">
-                </div>
-                <div class="gallery-thumb">
-                    <img src="images/gallery/gallery_small_4.png" alt="landscape">
-                </div>
+                <div id="gallery-thumb-1" class="gallery-thumb active"></div>
+                <div id="gallery-thumb-2" class="gallery-thumb"></div>
+                <div id="gallery-thumb-3" class="gallery-thumb"></div>
+                <div id="gallery-thumb-4" class="gallery-thumb"></div>
             </div>
         </div>
     </div>
@@ -1528,6 +1504,20 @@
                 <div class="slider-dot news-slider-dot"></div>
             </div>
         </div>
+    </div>
+
+    <div id="up" class="hidden">
+        <a href="#main">
+            <div class="up-button">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                     viewBox="0 0 443.52 443.52" style="enable-background:new 0 0 443.52 443.52;"
+                     xml:space="preserve"><g><g>
+                            <path d="M336.226,209.591l-204.8-204.8c-6.78-6.548-17.584-6.36-24.132,0.42c-6.388,6.614-6.388,17.099,0,23.712l192.734,192.734
+		                    L107.294,414.391c-6.663,6.664-6.663,17.468,0,24.132c6.665,6.663,17.468,6.663,24.132,0l204.8-204.8
+		                    C342.889,227.058,342.889,216.255,336.226,209.591z"/></g></g>
+                        </svg>
+            </div>
+        </a>
     </div>
 
 </div>

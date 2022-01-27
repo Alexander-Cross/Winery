@@ -370,7 +370,6 @@ header {
 }
 #traditions-img img {
     width: 550px;
-    height: 405px;
     box-shadow: 0 11px 44px 5px rgba(14, 15, 15, 0.79);
     border-radius: 25px;
 }
@@ -767,7 +766,6 @@ header {
     position: relative;
 }
 #philosophy-video img {
-    height: 405px;
     width: 550px;
     border-radius: 25px;
     box-shadow: 0 13px 26px 3px rgba(14, 15, 15, 0.43);
@@ -852,7 +850,6 @@ header {
 }
 #bestseller-bottle {
     width: 446px;
-    height: 561px;
     position: relative;
 }
 .bestseller-bottle-char {
@@ -895,6 +892,9 @@ header {
 }
 #tours-container h2 {
     text-align: center;
+}
+#tours-options {
+    display: none;
 }
 #tours-slides {
     max-width: 1098px;
@@ -1056,12 +1056,12 @@ header {
 #blog-slider-and-arrows .prev-btn {
     position: absolute;
     top: calc(50% - 38px);
-    left: -70px;
+    left: -40px;
 }
 #blog-slider-and-arrows .next-btn {
     position: absolute;
     top: calc(50% - 38px);
-    right: -70px;
+    right: -40px;
 }
 #blog-slider-viewport {
     max-width: 1121px;
@@ -1576,7 +1576,7 @@ a.footer-link {
     z-index: 0;
 }
 #gallery-container {
-    width: 848px;
+    width: 840px;
     position: relative;
 }
 #gallery-prev {
@@ -1591,27 +1591,51 @@ a.footer-link {
 }
 .gallery-big-img {
     margin-bottom: 16px;
-}
-.gallery-big-img img{
-    width: 100%;
+    width: 840px;
+    height: 454px;
     border-radius: 25px;
     box-shadow: 0 0 15px 8px rgba(5, 7, 10, 0.68);
+}
+#gallery-big-img-1 {
+    background: url("../images/gallery/gallery_big_1.png") center center;
+}
+#gallery-big-img-2 {
+    background: url("../images/gallery/gallery_big_2.png") center center;
+}
+#gallery-big-img-3 {
+    background: url("../images/gallery/gallery_big_3.png") center center;
+}
+#gallery-big-img-4 {
+    background: url("../images/gallery/gallery_big_4.png") center center;
 }
 #gallery-thumbs {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.gallery-thumb img {
+.gallery-thumb {
     border-radius: 25px;
     box-shadow: 0 0 8px 4px rgba(5, 7, 10, 0.68);
     width: 198px;
+    height: 122px;
     cursor: pointer;
     opacity: .6;
 }
-.gallery-thumb:hover img,
-.gallery-thumb.active img{
+.gallery-thumb:hover,
+.gallery-thumb.active{
     opacity: 1;
+}
+#gallery-thumb-1 {
+    background: url("../images/gallery/gallery_small_1.png") center center;
+}
+#gallery-thumb-2 {
+    background: url("../images/gallery/gallery_small_2.png") center center;
+}
+#gallery-thumb-3 {
+    background: url("../images/gallery/gallery_small_3.png") center center;
+}
+#gallery-thumb-4 {
+    background: url("../images/gallery/gallery_small_4.png") center center;
 }
 #video-popup-container {
     max-width: 800px;

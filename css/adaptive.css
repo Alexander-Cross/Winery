@@ -1,0 +1,210 @@
+/* 1201 - 1259px */
+@media screen and (max-width: 1249px) {
+    #main-container,
+    #traditions-container,
+    #price-container,
+    #philosophy-container,
+    #bestseller-container,
+    #footer-container {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #bestseller-bottle {
+        margin-left: 20px;
+    }
+    #tours-slides {
+        max-width: 1040px;
+    }
+    .tour-info-text ul li:first-child {
+        margin-top: 20px;
+    }
+    #tours-slides .prev-btn {
+        left: -50px;
+    }
+    #tours-slides .next-btn {
+        right: -50px;
+    }
+    #blog-slider-and-arrows {
+        max-width: 1061px;
+     }
+    .blog-slide-img-first,
+    .blog-slide-text-first {
+        margin-right: 21px;
+    }
+    #blog-slider-viewport {
+        max-width: 1061px;
+    }
+    #open-basket-container {
+        width: 1048px;
+    }
+    #open-basket-orders-heading,
+    #ordered-wines,
+    #open-basket-total {
+        padding-left: 45px;
+    }
+    .popup-fon {
+        align-items: flex-start;
+        padding-top: 80px;
+    }
+    #news-popup-container {
+        margin-top: 0;
+    }
+}
+/* 1024 - 1200px */
+@media screen and (max-width: 1200px) {
+    #traditions-img img {
+        width: 462px;
+    }
+    #traditions-img .round-btn {
+        top: 170px;
+    }
+    #traditions h2 {
+        max-width: 394px;
+    }
+    #traditions .info-text {
+        max-width: 470px;
+    }
+    #products-descriptions {
+        max-width: 480px;
+    }
+    #philosophy-video img {
+        width: 482px;
+    }
+    #play-button {
+        left: 221px;
+        top: 158px;
+    }
+    #bestseller-bottle {
+        width: 400px;
+    }
+    #bestseller-bottle img{
+        width: 400px;
+        margin-top: 20px;
+    }
+    #bestseller-type {
+        top: 200px;
+    }
+    #bestseller-alcohol {
+        right: 48px;
+    }
+    #bestseller-vintage {
+        right: 5px;
+    }
+    #bestseller-type {
+        left: -90px;
+    }
+    #tours-slides {
+        max-width: 960px;
+    }
+    .tour-info-text ul li:first-child {
+        margin-top: 16px;
+    }
+    .tour-info-text ul li {
+        line-height: 1;
+    }
+    .tour-info-text ul li:last-child {
+        margin-bottom: 18px;
+    }
+    #tours-slides .white-line {
+        margin-bottom: 18px;
+    }
+    .tour-duration {
+        margin-left: 0;
+    }
+    .tour-amount-cost {
+        margin-right: 0;
+    }
+    #tours_prev,
+    #tours_next,
+    #one-berry {
+        display: none;
+    }
+    #berries {
+        width: 182px;
+        left: -34px;
+        bottom: -180px;
+    }
+    #barrel {
+        width: 108px;
+        left: -24px;
+        bottom: -126px;
+    }
+    #second-slide-grape {
+        width: 126px;
+        left: 18px;
+        bottom: -132px;
+    }
+    #basket-of-grape {
+        width: 158px;
+        left: -24px;
+        bottom: -135px;
+    }
+    #third-slide-grape {
+        width: 93px;
+        left: 64px;
+        bottom: -95px;
+    }
+    #tours-slides {
+        margin-top: 40px;
+    }
+    #tours-options {
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+    }
+    #tours-options .btn-empty {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        border-radius: 17px;
+        height: 34px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin: 0 15px;
+    }
+    #tours-options .btn-empty.active,
+    #tours-options .btn-empty:hover {
+        border-color: #d6be97;
+        color: #d6be97;
+    }
+    .blog-slide-img-first,
+    .blog-slide-text-first {
+        width: 451px;
+        scroll-snap-align: start;
+    }
+    #blog-slider-viewport {
+        max-width: 1024px;
+        overflow-x: scroll;
+        -ms-overflow-style: none; /* for IE and Edge */
+        scrollbar-width: none; /* for Firefox */
+        scroll-snap-type: x mandatory;
+        scroll-padding: 0 35px;
+    }
+    #blog-slider-viewport::-webkit-scrollbar {
+        display: none;
+    }
+    #blog-prev,
+    #blog-next {
+        display: none;
+    }
+
+
+}
+/* 768 - 1023px */
+@media screen and (max-width: 1023px) {
+
+}
+
+/* 425 - 767px */
+@media screen and (max-width: 767px) {
+
+}
+
+/* 375 - 424px */
+@media screen and (max-width: 424px) {
+
+}
+
+/* 320 - 374px */
+@media screen and (max-width: 374px) {
+
+}
