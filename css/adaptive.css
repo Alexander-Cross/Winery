@@ -1,4 +1,26 @@
-/* 1201 - 1259px */
+/* 1250 - 1460px */
+@media screen and (max-width: 1460px) {
+    #news-popup-container {
+        width: 700px;
+        text-align: left;
+    }
+    .news-image {
+        text-align: right;
+        float: right;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    .news-image img {
+        width: 340px;
+    }
+    #news-prev, #news-next {
+        top: 234px;
+    }
+    #news-popup-container .info-text:first-child {
+        margin-top: 28px;
+    }
+}
+/* 1201 - 1249px */
 @media screen and (max-width: 1249px) {
     #main-container,
     #traditions-container,
@@ -42,15 +64,18 @@
     #open-basket-total {
         padding-left: 45px;
     }
-    .popup-fon {
-        align-items: flex-start;
-        padding-top: 80px;
+    #gallery-container {
+        width: 764px;
     }
-    #news-popup-container {
-        margin-top: 0;
+    .gallery-big-img {
+        width: 764px;
+        height: 380px;
+    }
+    .gallery-thumb {
+        width: 179px;
     }
 }
-/* 1024 - 1200px */
+/* 1121 - 1200px */
 @media screen and (max-width: 1200px) {
     #traditions-img img {
         width: 462px;
@@ -62,17 +87,10 @@
         max-width: 394px;
     }
     #traditions .info-text {
-        max-width: 470px;
+        max-width: 530px;
     }
     #products-descriptions {
         max-width: 480px;
-    }
-    #philosophy-video img {
-        width: 482px;
-    }
-    #play-button {
-        left: 221px;
-        top: 158px;
     }
     #bestseller-bottle {
         width: 400px;
@@ -186,8 +204,66 @@
     #blog-next {
         display: none;
     }
-
-
+    #desktop-blog-dots {
+        display: none;
+    }
+    #mobile-blog-dots {
+        display: flex;
+    }
+    #open-basket-container {
+        width: 940px;
+     }
+    .ordered-wine-img {
+        width: 95px;
+    }
+    .ordered-wine-img img {
+        transform: scale(0.75) rotate(-90deg);
+    }
+    #open-basket-orders-heading,
+    #ordered-wines,
+    #open-basket-total {
+        padding-left: 25px;
+    }
+    .ordered-wine {
+        margin-right: 25px;
+    }
+}
+/* 1070 - 1120px */
+@media screen and (max-width: 1120px) {
+    #traditions .info-text {
+        max-width: 514px;
+    }
+    #philosophy-video img {
+        width: 482px;
+    }
+    #play-button {
+        left: 221px;
+        top: 158px;
+    }
+    #traditions-container {
+        margin-top: 300px;
+    }
+}
+/* 1024 - 1069px */
+@media screen and (max-width: 1069px) {
+    #traditions .info-text {
+        max-width: 470px;
+    }
+    #open-basket-container {
+        width: 880px;
+    }
+    #open-basket-container .popup-input {
+        width: 260px;
+    }
+    #open-basket-form {
+        width: 304px;
+    }
+    #news-popup-container {
+        width: 650px;
+    }
+    .news-image img {
+        width: 280px;
+    }
 }
 /* 768 - 1023px */
 @media screen and (max-width: 1023px) {

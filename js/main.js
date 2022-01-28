@@ -1081,7 +1081,6 @@ window.onload = function () {
         showToursSlides(tourSlideIndex = n);
     }
 
-
     // news pop-up slides
     let newsSlideIndex = 1;
     let newsDots = document.getElementsByClassName('news-slider-dot');
@@ -1134,8 +1133,10 @@ window.onload = function () {
     let oneSlideFullLength = oneSlideLength + oneSlideMarginLeft + oneSlideMarginRight;
     let blogSlider = document.getElementById('blog-slider');
     let blogSliderDots = document.getElementsByClassName('blog-slider-dot');
+    let blogSliderDotsMobile = document.getElementsByClassName('mobile-blog-slider-dot');
     let blogNextButton = document.getElementById('blog-next');
     let blogPrevButton = document.getElementById('blog-prev');
+    let blogViewport = document.getElementById('blog-slider-viewport');
     let oddSlides = document.getElementsByClassName('blog-slide-img-first');
     let evenSlides = document.getElementsByClassName('blog-slide-text-first');
     let blogSlidesAmount = oddSlides.length + evenSlides.length;
@@ -1152,6 +1153,11 @@ window.onload = function () {
             currentBlogSlide(i+1);
         };
     }
+    for (let i = 0; i < blogSliderDotsMobile.length; i++) {
+        blogSliderDotsMobile[i].onclick = () => {
+            currentBlogSlideMobile(i+1);
+        };
+    }
 
     blogNextButton.addEventListener('click', () => {
         listBlogSlides(1);
@@ -1160,29 +1166,7 @@ window.onload = function () {
         listBlogSlides(-1);
     });
 
-    // let touchstartX = 0;
-    // let touchendX = 0;
-    //
-    // function handleGesture() {
-    //     if (touchendX < touchstartX) {
-    //         listBlogSlides(1);
-    //     }
-    //     if (touchendX > touchstartX) {
-    //         listBlogSlides(-1);
-    //     }
-    // }
-    //
-    // blogSlider.addEventListener('touchstart', e => {
-    //     touchstartX = e.changedTouches[0].screenX;
-    // })
-    //
-    // blogSlider.addEventListener('touchend', e => {
-    //     touchendX = e.changedTouches[0].screenX;
-    //     handleGesture();
-    // })
-
-    let blogViewport = document.getElementById('blog-slider-viewport');
-    blogViewport.addEventListener('touchend', () => {
+    blogViewport.addEventListener('scroll', () => {
         let viewportScroll = blogViewport.scrollLeft;
         if (viewportScroll === 0) {
             blogSlideIndex = 1;
@@ -1192,15 +1176,12 @@ window.onload = function () {
             blogSlideIndex = 3;
         } else if (viewportScroll > 2 * oneSlideFullLength && viewportScroll <= 3 * oneSlideFullLength) {
             blogSlideIndex = 4;
-        } else if (viewportScroll > 3 * oneSlideFullLength && viewportScroll <= 4 * oneSlideFullLength) {
+        } else if (viewportScroll > 3 * oneSlideFullLength) {
             blogSlideIndex = 5;
+        } else {
+          // nothing happens
         }
-        for (let i =0; i < blogSliderDots.length; i++) {
-            if (blogSliderDots[i].classList.contains('active')) {
-                blogSliderDots[i].classList.remove('active');
-            }
-        }
-        blogSliderDots[blogSlideIndex-1].classList.add('active');
+        makeActiveBlogSliderDots();
     });
 
     function listBlogSlides(n) {
@@ -1209,6 +1190,24 @@ window.onload = function () {
 
     function currentBlogSlide(n) {
         showBlogSlide(blogSlideIndex = n);
+    }
+    function currentBlogSlideMobile(n) {
+        showBlogSlideMobile(blogSlideIndex = n);
+    }
+
+    function makeActiveBlogSliderDots() {
+        for (let i =0; i < blogSliderDots.length; i++) {
+            if (blogSliderDots[i].classList.contains('active')) {
+                blogSliderDots[i].classList.remove('active');
+            }
+        }
+        blogSliderDots[blogSlideIndex-1].classList.add('active');
+        for (let i =0; i < blogSliderDotsMobile.length; i++) {
+            if (blogSliderDotsMobile[i].classList.contains('active')) {
+                blogSliderDotsMobile[i].classList.remove('active');
+            }
+        }
+        blogSliderDotsMobile[blogSlideIndex-1].classList.add('active');
     }
 
     function showBlogSlide(n) {
@@ -1226,13 +1225,28 @@ window.onload = function () {
             blogSlider.style.left = '-' + oneSlideFullLength * (i-1) +'px';
             }
         }
-        for (let i =0; i < blogSliderDots.length; i++) {
-            if (blogSliderDots[i].classList.contains('active')) {
-                blogSliderDots[i].classList.remove('active');
+        makeActiveBlogSliderDots();
+    }
+
+    function showBlogSlideMobile(n) {
+        if (n > blogSlidesAmount-1) {
+            blogSlideIndex = 1;
+        }
+        if (n < 1) {
+            blogSlideIndex = blogSlidesAmount-1;
+        }
+        if (blogSlideIndex === 1) {
+            blogViewport.scrollLeft = 0;
+        }
+        for (let i = 2; i < blogSlidesAmount; i++) {
+            if (blogSlideIndex === i) {
+            blogViewport.scrollLeft = oneSlideFullLength * (i - 1);
             }
         }
-        blogSliderDots[blogSlideIndex-1].classList.add('active');
+        makeActiveBlogSliderDots();
     }
+
+
 
     //make orders in basket
     let basketButton = document.getElementById('basket-button');
@@ -1319,9 +1333,9 @@ window.onload = function () {
             let http = new XMLHttpRequest();
             http.open('POST', '../php/orderTour.php');
             let newTourOrder = {};
-            newTourOrder.tourNumber = tourSlideIndex;  //defined earlier in the tours slides section
-            newTourOrder.time = orderedTourTime;       //defined a little below in tour-popup time-options
-            newTourOrder.amount = orderedTourAmount;   // defined a little earlier in open tour pop-up
+            newTourOrder.tourNumber = tourSlideIndex;  //defined earlier in the 'tours slides' section
+            newTourOrder.time = orderedTourTime;       //defined a little below in the 'tour-popup time-options'
+            newTourOrder.amount = orderedTourAmount;   // defined a little earlier in the 'open tour pop-up'
             newTourOrder.name = tourPopupInputs[0].value;
             newTourOrder.date = tourPopupInputs[1].value;
             newTourOrder.email = tourPopupInputs[2].value;

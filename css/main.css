@@ -1645,14 +1645,10 @@ a.footer-link {
     border-radius: 10px;
     border: none;
 }
-#news-popup.popup-fon {
-    align-items: flex-start;
-}
+
 #news-popup-container {
     padding: 50px 110px;
-    margin-top: 90px;
 }
-
 #news-popup-container .title-text {
     font-size: 25px;
 }
@@ -1742,4 +1738,7 @@ a.footer-link {
 }
 #send-error-container #send-error-message.info-text {
     line-height: 1.6em;
+}
+#mobile-blog-dots {
+    display: none;
 }
