@@ -227,6 +227,9 @@
     .ordered-wine {
         margin-right: 25px;
     }
+    #no-orders {
+        width: 529px;
+    }
 }
 /* 1070 - 1120px */
 @media screen and (max-width: 1120px) {
@@ -267,9 +270,310 @@
 }
 /* 768 - 1023px */
 @media screen and (max-width: 1023px) {
-
+    #traditions-container {
+        display: block;
+    }
+    #traditions-text {
+        margin: 50px auto 0 auto;
+    }
+    #traditions-text-split {
+        display: block;
+        margin: 0 auto;
+    }
+    #traditions-text .info-text:nth-child(3),
+    #traditions-text .info-text:nth-child(4) {
+        display: none;
+    }
+    #traditions-text h2 {
+        max-width: unset;
+        text-align: center;
+    }
+    #traditions-text,
+    #traditions-text-split,
+    #traditions-container .info-text {
+        max-width: 680px;
+    }
+    #traditions-img {
+        text-align: center;
+        margin: 30px auto 0 auto;
+    }
+    #traditions-text-split .info-text:last-child {
+        margin-top: 30px;
+    }
+    #products {
+        display: block;
+    }
+    #current-price-header,
+    #product-year {
+        display: none;
+    }
+    #products-descriptions-mobile {
+        display: block;
+        margin-top: 40px;
+    }
+    #product-year-mobile {
+        margin-top: 16px;
+    }
+    #products-images {
+        margin: 30px auto 0 auto;
+    }
+    #product-image {
+        max-width: 560px;
+        margin: 0 auto;
+    }
+    #barrels {
+        top: -19px;
+    }
+    #products-descriptions {
+        margin: 0 auto;
+    }
+    #philosophy-info {
+        display: block;
+    }
+    .philosophy-step-arrow-mobile {
+        display: block;
+    }
+    #philosophy-steps {
+        max-width: 340px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .sub-step-arrow-left,
+    .sub-step-arrow-right,
+    .even-step-image,
+    .odd-step-image {
+        display: none;
+    }
+    .philosophy-step-arrow-mobile {
+        text-align: center;
+    }
+    .philosophy-step-and-sub-step {
+        margin-bottom: 0;
+    }
+    .philosophy-even-step {
+        justify-content: flex-end;
+    }
+    .philosophy-even-step .step-number-in-the-round {
+        order: 2;
+    }
+    .step-heading {
+        margin-left: 25px;
+    }
+    .philosophy-even-step .step-heading {
+        order: 1;
+        margin-right: 25px;
+    }
+    .even .sub-step-text {
+        margin-left: auto;
+        margin-right: 77px;
+    }
+    .odd .sub-step-text {
+        margin-left: 79px;
+    }
+    .sub-step-text.info-text {
+        max-width: 280px;
+    }
+    .philosophy-step-and-sub-step.active img {
+        margin-top: -4px;
+        margin-bottom: -8px;
+    }
+    .philosophy-step-and-sub-step.active img {
+        margin-top: 12px;
+    }
+    #philosophy-video {
+        text-align: center;
+        max-width: 482px;
+        margin: 50px auto 0 auto;
+    }
+    #philosophy-grape-mobile {
+        display: unset;
+        position: absolute;
+        z-index: -1;
+        top: -60px;
+        left: -157px;
+        width: 640px;
+        transform: rotate(219deg);
+    }
+    #bestseller-container {
+        display: block;
+    }
+    #bestseller-name {
+        text-align: center;
+    }
+    #bestseller-name .bestseller-line {
+        margin: 20px auto;
+    }
+    #bestseller-name h2 {
+        max-width: unset;
+    }
+    #bestseller-bottle {
+        text-align: center;
+        margin: 0 auto;
+    }
+    #bestseller-bottle img {
+        margin-left: 35px;
+        margin-top: 40px;
+    }
+    #bestseller-type {
+        left: -45px;
+        top: 93px;
+    }
+    #bestseller-grape {
+        left: -107px;
+        top: 269px;
+    }
+    #bestseller-alcohol {
+        right: 8px;
+    }
+    #bestseller-vintage {
+        right: -40px;
+    }
+    #bestseller-char {
+        max-width: 615px;
+        margin: 20px auto 0 auto;
+    }
+    #bestseller-char .info-text {
+        max-width: 360px;
+    }
+    #bestseller-price-tag {
+        float: left;
+    }
+    #bestseller-amount {
+        margin: 30px 0 40px 100px;
+    }
+    #bestseller-action {
+        clear: both;
+    }
+    #plugs {
+        top: 88px;
+    }
+    .tour-slide {
+        display: block;
+        max-width: 708px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 40px;
+    }
+    .tour-info {
+        display: block;
+        width: 100%;
+    }
+    .tour-image {
+        display: none;
+    }
+    .tour-mobile-img {
+        display: block;
+        width: 519px;
+        height: 300px;
+        margin: 25px auto 0 auto;
+        border-radius: 15px;
+    }
+    #tour-mobile-img-1 {
+        background: url("../images/tour-m-1.png") bottom left;
+    }
+    #tour-mobile-img-2 {
+        background: url("../images/tour-m-2.png") center center;
+    }
+    #tour-mobile-img-3 {
+        background: url("../images/tour-m-3.png") center center;
+    }
+    .tour-info-text ul li:first-child {
+        margin-top: 25px;
+    }
+    .tour-info-text ul li:last-child {
+        margin-bottom: 25px;
+    }
+    .tour-info-text ul li {
+        margin-bottom: 15px;
+    }
+    #tours-slides .white-line {
+        margin-bottom: 25px;
+    }
+    #footer-navigation {
+        display: none;
+    }
+    #footer-logo-and-slogan {
+        margin-right: 25px;
+    }
+    #footer-logo-and-slogan .info-text {
+        max-width: 180px;
+    }
+    #spring2 {
+        right: -402px;
+    }
+    #footer-contacts .info-text {
+        max-width: 220px;
+    }
+    #open-basket-container {
+        display: block;
+        max-width: 575px;
+    }
+    .open-basket-big-title {
+        text-align: center;
+    }
+    #open-basket-orders-heading {
+        padding: 0;
+        margin-left: 25px;
+    }
+    #open-basket-orders {
+        padding-top: 30px;
+        padding-bottom: 25px;
+    }
+    #open-basket-container .close-popup {
+        top: 20px;
+        right: 20px;
+    }
+    #ordered-wines {
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+    #open-basket-form {
+        padding-top: 40px;
+        width: 100%;
+        border-radius: 0 0 25px 25px;
+        border-left: none;
+        border-top: 1px solid rgb(214, 191, 152);
+    }
+    #open-basket-inputs {
+        margin-top: 25px;
+    }
+    #open-basket-container .popup-input {
+        width: 360px;
+    }
+    #no-orders {
+        width: 525px;
+    }
+    #gallery-next,
+    #gallery-prev {
+        display: none;
+    }
+    #gallery-container {
+        width: 628px;
+    }
+    .gallery-big-img {
+        width: 628px;
+        height: 400px;
+    }
+    .gallery-thumb {
+        width: 145px;
+    }
+    #video-popup-container {
+        max-width: 640px;
+    }
+    #video-popup-container iframe {
+        width: 640px;
+        height: 360px;
+    }
+    .news-image img {
+        display: none;
+    }
+    #news-popup-container .title-text {
+        text-align: center;
+    }
+    #news-popup-container {
+        width: 380px;
+    }
 }
-
 /* 425 - 767px */
 @media screen and (max-width: 767px) {
 

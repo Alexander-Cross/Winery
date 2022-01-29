@@ -35,6 +35,7 @@ body {
     color: #1E2125;
     text-transform: uppercase;
     font-family: "Bebas Neue Regular", sans-serif;
+    outline: none
 }
 .btn-fill-big:hover {
     background-image: -moz-linear-gradient( 90deg, rgb(213, 158, 91) 0%, rgb(213, 178, 131) 60%, rgb(217, 190, 146) 100%);
@@ -357,6 +358,9 @@ header {
     display: flex;
     justify-content: space-between;
 }
+#traditions-text-split {
+    display: none;
+}
 #traditions .info-text {
     margin-top: 30px;
     max-width: 498px;
@@ -442,10 +446,16 @@ header {
 #price .next-btn {
     right: 52px;
 }
+#products-descriptions-mobile {
+    display: none;
+}
 #products-descriptions {
     max-width: 510px;
 }
-#products-descriptions h3, #year{
+#products-descriptions h3,
+#year,
+#products-descriptions-mobile h3,
+#year-mobile {
     font-size: 30px;
     letter-spacing: 0.02em;
     font-family: "Bebas Neue Regular", sans-serif;
@@ -457,12 +467,14 @@ header {
     margin-top: 69px;
     margin-bottom: 35px;
 }
-#product-year {
+#product-year,
+#product-year-mobile {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#year {
+#year,
+#year-mobile {
     margin: 0 7px;
 }
 .year-line {
@@ -761,6 +773,10 @@ header {
     line-height: 1.2;
     max-width: 290px;
 }
+.philosophy-step-arrow-mobile,
+#philosophy-grape-mobile {
+    display: none;
+}
 #philosophy-video {
     margin-top: 37px;
     position: relative;
@@ -807,6 +823,9 @@ header {
     display: flex;
     justify-content: space-between;
     position: relative;
+}
+#bestseller-char .white-line {
+    display: none;
 }
 #plugs {
     position: absolute;
@@ -956,6 +975,9 @@ header {
     z-index: 2;
     bottom: -175px;
     left: -3px;
+}
+.tour-mobile-img {
+    display: none;
 }
 .tour-info, .tour-image {
     width: 50%;
@@ -1644,6 +1666,8 @@ a.footer-link {
 #video-popup-container iframe {
     border-radius: 10px;
     border: none;
+    width: 800px;
+    height: 450px;
 }
 
 #news-popup-container {

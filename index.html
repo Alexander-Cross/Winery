@@ -11,6 +11,7 @@
 </head>
 <body>
 <div id="body-container">
+
     <div id="main">
         <div id="main-container">
             <header>
@@ -105,6 +106,16 @@
                     </span>
                 </div>
             </div>
+            <div id="traditions-text-split">
+                <div class="info-text">
+                    Джозеф преследовал одну цель: сделать свое вино одним из лучших в Авиньоне.
+                </div>
+                <div class="info-text">
+                    Сегодня у руля стоит четвертое поколение. Наследники выросли практически на виноградниках и
+                    подвалах,
+                    вдохновленные той же страстью, которая вдохновляла основателя компании.
+                </div>
+            </div>
         </div>
     </div>
 
@@ -120,6 +131,14 @@
                 <button class="option btn-empty" id="price_pink">Розовые</button>
             </div>
             <div id="products">
+                <div id="products-descriptions-mobile">
+                    <h3 id="current-price-header-mobile">«REINA» CUVEE PRESTIGE</h3>
+                    <div id="product-year-mobile">
+                        <div class="year-line"></div>
+                        <div id="year-mobile">2018</div>
+                        <div class="year-line"></div>
+                    </div>
+                </div>
                 <div id="products-images">
                     <div id="product-image">
                         <img src="images/catalog/red-1.png" id="current-price-image" alt="bottle of wine">
@@ -219,7 +238,8 @@
             </h2>
             <div id="philosophy-info">
                 <div id="philosophy-steps">
-                    <div class="philosophy-step-and-sub-step">
+                    <img src="images/grape_2.png" id="philosophy-grape-mobile" alt="grape">
+                    <div class="philosophy-step-and-sub-step odd">
                         <div class="philosophy-step">
                             <div class="step-number-in-the-round odd-step">
                                 <img src="images/step-arrow-left.png" class="odd-step-image" alt="arrow">
@@ -247,9 +267,12 @@
                                 Наш большой опыт позволяет нам выбрать правильное время для сбора урожая.
                             </div>
                         </div>
+                        <div class="philosophy-step-arrow-mobile">
+                            <img src="images/step-curve-arrow-right.png" alt="arrow">
+                        </div>
                     </div>
-                    <div class="philosophy-step-and-sub-step active">
-                        <div class="philosophy-step">
+                    <div class="philosophy-step-and-sub-step even active">
+                        <div class="philosophy-step philosophy-even-step">
                             <div class="step-number-in-the-round even-step">
                                 <img src="images/step-arrow-right.png" class="even-step-image" alt="arrow">
                                 <div class="tiny-circle"></div>
@@ -276,8 +299,11 @@
                                 окрашивать сок, который должен сохранить прозрачность и свой светлый цвет.
                             </div>
                         </div>
+                        <div class="philosophy-step-arrow-mobile">
+                            <img src="images/step-curve-arrow-left.png" alt="arrow">
+                        </div>
                     </div>
-                    <div class="philosophy-step-and-sub-step">
+                    <div class="philosophy-step-and-sub-step odd">
                         <div class="philosophy-step">
                             <div class="step-number-in-the-round odd-step">
                                 <img src="images/step-arrow-left.png" class="odd-step-image" alt="arrow">
@@ -306,9 +332,12 @@
                                 ферментации.
                             </div>
                         </div>
+                        <div class="philosophy-step-arrow-mobile">
+                            <img src="images/step-curve-arrow-right.png" alt="arrow">
+                        </div>
                     </div>
-                    <div class="philosophy-step-and-sub-step">
-                        <div class="philosophy-step">
+                    <div class="philosophy-step-and-sub-step even">
+                        <div class="philosophy-step philosophy-even-step">
                             <div class="step-number-in-the-round even-step">
                                 <img src="images/step-arrow-right.png" class="even-step-image" alt="arrow">
                                 <div class="tiny-circle"></div>
@@ -336,10 +365,13 @@
                                 имеет сильнее выраженный сортовой аромат.
                             </div>
                         </div>
+                        <div class="philosophy-step-arrow-mobile">
+                            <img src="images/step-curve-arrow-left.png" alt="arrow">
+                        </div>
                     </div>
-                    <div class="philosophy-step-and-sub-step">
+                    <div class="philosophy-step-and-sub-step odd">
                         <div class="philosophy-step">
-                            <div class="step-number-in-the-round">
+                            <div class="step-number-in-the-round odd-step">
                                 <div class="tiny-circle"></div>
                                 <svg class="circle-progress" height="58" width="58">
                                     <circle id="circle-5-progress" cx="29" cy="29" r="26" stroke="#d6bf98"
@@ -446,6 +478,7 @@
                 <div class="info-text">
                     Рекомендуемая температура подачи 10–12 °С
                 </div>
+                <div class="white-line"></div>
                 <div id="bestseller-price-tag">
                     €<span id="bestseller-price">40</span>
                 </div>
@@ -499,6 +532,7 @@
                             <div class="tour-info-heading title-text">
                                 Экскурсия по винодельне и дегустация вин с гидом, бранч – шведский стол
                             </div>
+                            <div id="tour-mobile-img-1" class="tour-mobile-img"></div>
                             <div class="tour-info-text">
                                 <ul>
                                     <li class="info-text">экскурсия по территории, посещение подвалов</li>
@@ -553,6 +587,7 @@
                             <div class="tour-info-heading title-text">
                                 Экскурсия по винодельне и мастер-класс по заготовке и выдержке вина
                             </div>
+                            <div id="tour-mobile-img-2" class="tour-mobile-img"></div>
                             <div class="tour-info-text">
                                 <ul>
                                     <li class="info-text">экскурсия по территории, посещение подвалов</li>
@@ -608,6 +643,7 @@
                             <div class="tour-info-heading title-text">
                                 Экскурсия по винодельне и возможность самому поучаствовать в сборе урожая
                             </div>
+                            <div id="tour-mobile-img-3" class="tour-mobile-img"></div>
                             <div class="tour-info-text">
                                 <ul>
                                     <li class="info-text">экскурсия по территории, посещение плантаций</li>
@@ -1350,7 +1386,7 @@
             <div class="close-popup">
                 <img src="images/cancel_big.png" alt="close popup">
             </div>
-            <iframe src="https://player.vimeo.com/video/542069905?h=80b3864299&title=0&byline=0&portrait=0" width="800" height="450" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+            <iframe src="https://player.vimeo.com/video/542069905?h=80b3864299&title=0&byline=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture"></iframe>
         </div>
     </div>
 

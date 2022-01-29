@@ -388,9 +388,11 @@ window.onload = function () {
     //price
     let currentImage = document.getElementById('current-price-image');
     let currentHeader = document.getElementById('current-price-header');
+    let currentHeaderMobile = document.getElementById('current-price-header-mobile');
     let shortHeader = 'Cuvee Prestige';
     let smallImageSrc = 'images/catalog/red-1-s.png';
     let year = document.getElementById('year');
+    let yearMobile = document.getElementById('year-mobile');
     let type = document.getElementById('type');
     let alcohol = document.getElementById('alcohol');
     let volume = document.getElementById('volume');
@@ -407,7 +409,9 @@ window.onload = function () {
     function showRedWine() {
         currentImage.setAttribute('src', redWine[lastSeenRedWine].imageSrc);
         currentHeader.innerText = redWine[lastSeenRedWine].name;
+        currentHeaderMobile.innerText = redWine[lastSeenRedWine].name;
         year.innerText = redWine[lastSeenRedWine].year;
+        yearMobile.innerText = redWine[lastSeenRedWine].year;
         type.innerText = redWine[lastSeenRedWine].type;
         alcohol.innerText = redWine[lastSeenRedWine].alcohol;
         volume.innerText = redWine[lastSeenRedWine].volume;
@@ -456,7 +460,9 @@ window.onload = function () {
     function showWhiteWine() {
         currentImage.setAttribute('src', whiteWine[lastSeenWhiteWine].imageSrc);
         currentHeader.innerText = whiteWine[lastSeenWhiteWine].name;
+        currentHeaderMobile.innerText = whiteWine[lastSeenWhiteWine].name;
         year.innerText = whiteWine[lastSeenWhiteWine].year;
+        yearMobile.innerText = whiteWine[lastSeenWhiteWine].year;
         type.innerText = whiteWine[lastSeenWhiteWine].type;
         alcohol.innerText = whiteWine[lastSeenWhiteWine].alcohol;
         volume.innerText = whiteWine[lastSeenWhiteWine].volume;
@@ -504,7 +510,9 @@ window.onload = function () {
     function showPinkWine() {
         currentImage.setAttribute('src', pinkWine[lastSeenPinkWine].imageSrc);
         currentHeader.innerText = pinkWine[lastSeenPinkWine].name;
+        currentHeaderMobile.innerText = pinkWine[lastSeenPinkWine].name;
         year.innerText = pinkWine[lastSeenPinkWine].year;
+        yearMobile.innerText = pinkWine[lastSeenPinkWine].year;
         type.innerText = pinkWine[lastSeenPinkWine].type;
         alcohol.innerText = pinkWine[lastSeenPinkWine].alcohol;
         volume.innerText = pinkWine[lastSeenPinkWine].volume;
@@ -552,7 +560,9 @@ window.onload = function () {
     function showAllWine() {
         currentImage.setAttribute('src', allWine[lastSeenAllWine].imageSrc);
         currentHeader.innerText = allWine[lastSeenAllWine].name;
+        currentHeaderMobile.innerText = allWine[lastSeenAllWine].name;
         year.innerText = allWine[lastSeenAllWine].year;
+        yearMobile.innerText = allWine[lastSeenAllWine].year;
         type.innerText = allWine[lastSeenAllWine].type;
         alcohol.innerText = allWine[lastSeenAllWine].alcohol;
         volume.innerText = allWine[lastSeenAllWine].volume;
