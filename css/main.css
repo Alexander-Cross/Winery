@@ -498,6 +498,9 @@ header {
     margin-left: 6px;
     color: white;
 }
+#product-characteristics>div>span#type-first-span {
+    color: #d6bf98;
+}
 #char-text {
     margin: 20px 0 35px 0;
 }
@@ -507,6 +510,7 @@ header {
 #products-descriptions-order {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 #product-price-tag {
     font-size: 30px;
@@ -834,6 +838,9 @@ header {
     right: -360px;
     opacity: .1;
 }
+#plugs-mobile {
+    display: none;
+}
 #bestseller-name, #bestseller-char {
     margin-top: 62px;
 }
@@ -978,6 +985,15 @@ header {
 }
 .tour-mobile-img {
     display: none;
+}
+#tour-mobile-img-1 {
+    background: url("../images/tour-m-1.png") bottom left;
+}
+#tour-mobile-img-2 {
+    background: url("../images/tour-m-2.png") center center;
+}
+#tour-mobile-img-3 {
+    background: url("../images/tour-m-3.png") center center;
 }
 .tour-info, .tour-image {
     width: 50%;
@@ -1423,6 +1439,11 @@ a.footer-link {
     box-sizing: border-box;
     box-shadow: 0 7px 25px 5px rgba(12, 16, 21, 0.7);
 }
+.ordered-wine-all-info,
+.amount-and-all-cost {
+    display: flex;
+    align-items: center;
+}
 .ordered-wine-cost.title-text {
     font-size: 20px;
     letter-spacing: 0.015em;
@@ -1765,4 +1786,65 @@ a.footer-link {
 }
 #mobile-blog-dots {
     display: none;
+}
+#burger {
+    width: 25px;
+    display: none;
+}
+.burger-line {
+    width: 25px;
+    height: 1px;
+    background: white;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+.burger-line:last-child {
+    width: 18px;
+    margin-bottom: 0;
+}
+#burger-menu {
+    display: none;
+}
+#burger-menu {
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+}
+#burger-menu-container {
+    position: relative;
+    width: 260px;
+    box-sizing: border-box;
+    height: 100vh;
+    text-align: center;
+    padding: 50px 93px;
+    background: #1e2125;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    font-family: "Bebas Neue Regular", sans-serif;
+    text-transform: uppercase;
+}
+.burger-menu-option {
+    margin-bottom: 20px;
+}
+.burger-menu-option a {
+    text-decoration: none;
+    color: white;
+}
+.burger-menu-option a:hover {
+    color: #CFAA7F;
+}
+#burger-menu-container {
+    position: relative;
+}
+#burger-close-popup {
+    width: 15px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#burger-close-popup img{
+    width: 15px;
+    height: 15px;
 }

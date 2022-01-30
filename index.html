@@ -16,6 +16,12 @@
         <div id="main-container">
             <header>
                 <div id="logo-and-header-links">
+                    <div id="burger">
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                    </div>
                     <div class="logo-clickable">
                         <a href="index.html">
                             <div class="logo">
@@ -178,15 +184,15 @@
                         <div class="year-line"></div>
                     </div>
                     <div id="product-characteristics">
-                        <div class="title-text">
-                            Тип:
+                        <div id="product-characteristics-type" class="title-text">
+                            <span id="type-first-span">Тип:</span>
                             <span id="type" class="info-text">Сухое красное</span>
                         </div>
-                        <div class="title-text">
+                        <div id="product-characteristics-alcohol" class="title-text">
                             Крепость:
                             <span id="alcohol" class="info-text">14%</span>
                         </div>
-                        <div class="title-text">
+                        <div id="product-characteristics-volume" class="title-text">
                             Объём:
                             <span id="volume" class="info-text">0,5л</span>
                         </div>
@@ -492,6 +498,7 @@
                 </div>
             </div>
             <img src="images/plug3.png" id="plugs" alt="wine bottles plugs">
+            <img src="images/plugs-mobile.png" id="plugs-mobile" alt="wine bottles plugs">
         </div>
     </div>
 
@@ -1217,24 +1224,28 @@
                         </div>
 <!--                        <div class="ordered-wine">-->
 <!--                            <div class="ordered-wine-img">-->
-<!--                                <img src="images/ordered-wine.png" alt="ordered wine bottle">-->
+<!--                                <img src="images/catalog/red-1-s.png" alt="ordered wine bottle">-->
 <!--                            </div>-->
-<!--                            <div class="ordered-wine-info">-->
-<!--                                <div class="ordered-wine-name">-->
-<!--                                    Cuvee Prestige-->
+<!--                            <div class="ordered-wine-all-info">-->
+<!--                                <div class="ordered-wine-info">-->
+<!--                                    <div class="ordered-wine-name">-->
+<!--                                        Cuvee Prestige-->
+<!--                                    </div>-->
+<!--                                    <div class="info-text ordered-wine-type-alc">-->
+<!--                                        <span>Сухое, красное</span><br>-->
+<!--                                        Алк. <span>15%</span>-->
+<!--                                    </div>-->
 <!--                                </div>-->
-<!--                                <div class="info-text ordered-wine-type-alc">-->
-<!--                                    <span>Сухое, красное</span><br>-->
-<!--                                    Алк. <span>15%</span>-->
+<!--                                <div class="amount-and-all-cost">-->
+<!--                                    <div class="title-text ordered-wine-cost">-->
+<!--                                        €<span id="ordered-wine-1-cost">40</span>-->
+<!--                                    </div>-->
+<!--                                    <div class="ordered-wine-amount-regulation">-->
+<!--                                        <div id="ordered-wine-amount-minus-1" class="plus-minus">-</div>-->
+<!--                                        <div id="ordered-wine-amount-1" class="btn-fill btn-fill-small">1</div>-->
+<!--                                        <div id="ordered-wine-amount-plus-1" class="plus-minus">+</div>-->
+<!--                                    </div>-->
 <!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="title-text ordered-wine-cost">-->
-<!--                                €<span id="ordered-wine-1-cost">40</span>-->
-<!--                            </div>-->
-<!--                            <div class="ordered-wine-amount-regulation">-->
-<!--                                <div id="ordered-wine-amount-minus-1" class="plus-minus">-</div>-->
-<!--                                <div id="ordered-wine-amount-1" class="btn-fill btn-fill-small">1</div>-->
-<!--                                <div id="ordered-wine-amount-plus-1" class="plus-minus">+</div>-->
 <!--                            </div>-->
 <!--                            <div class="ordered-wine-del">-->
 <!--                                <img src="images/cancel.png" alt="cancel order">-->
@@ -1581,6 +1592,26 @@
                         </svg>
             </div>
         </a>
+    </div>
+
+    <div id="burger-menu">
+        <div id="burger-menu-container">
+            <div id="burger-close-popup">
+                <img src="images/cancel_big.png" alt="close popup">
+            </div>
+            <div class="burger-menu-option">
+                <a href="#price" class="burger-menu-links">Наши вина</a>
+            </div>
+            <div class="burger-menu-option">
+                <a href="#tours" class="burger-menu-links">Винные туры</a>
+            </div>
+            <div class="burger-menu-option">
+                <a href="#philosophy" class="burger-menu-links">О нас</a>
+            </div>
+            <div class="burger-menu-option">
+                <a href="#blog" class="burger-menu-links">Блог</a>
+            </div>
+        </div>
     </div>
 
 </div>

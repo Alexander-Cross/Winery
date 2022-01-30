@@ -828,9 +828,11 @@ window.onload = function () {
             let smallImage = document.createElement('img');
             smallImage.src = orders[i].smallImageSrc;
             orderedWineImg.appendChild(smallImage);
+            let orderedWineAllInfo = document.createElement('div');
+            orderedWineAllInfo.classList.add('ordered-wine-all-info');
             let orderedWineInfo = document.createElement('div');
             orderedWineInfo.classList.add('ordered-wine-info');
-            orderedWine.appendChild(orderedWineInfo);
+            orderedWineAllInfo.appendChild(orderedWineInfo);
             let orderedWineName = document.createElement('div');
             orderedWineName.classList.add('ordered-wine-name');
             orderedWineName.innerText = orders[i].shortName;
@@ -846,6 +848,9 @@ window.onload = function () {
             spanAlc.innerText = 'Алк. ' + orders[i].alcohol;
             orderedWineTypeAlc.appendChild(spanAlc);
             orderedWineInfo.appendChild(orderedWineTypeAlc);
+            let amountAndAllCost = document.createElement('div');
+            amountAndAllCost.className = 'amount-and-all-cost';
+            orderedWineAllInfo.appendChild(amountAndAllCost);
             let orderedWineCost = document.createElement('div');
             orderedWineCost.className = 'title-text ordered-wine-cost';
             orderedWineCost.innerText = '€';
@@ -855,7 +860,7 @@ window.onload = function () {
             spanCost.innerText = currentAllCost;
             spanCost.classList.add('cost-in-the-basket')
             orderedWineCost.appendChild(spanCost);
-            orderedWine.appendChild(orderedWineCost);
+            amountAndAllCost.appendChild(orderedWineCost);
             let orderedWineAmountRegulation = document.createElement('div');
             orderedWineAmountRegulation.classList.add('ordered-wine-amount-regulation');
             let plusMinus = document.createElement('div');
@@ -870,7 +875,8 @@ window.onload = function () {
             plusMinus2.className = 'plus-minus basket-plus';
             plusMinus2.innerText = '+';
             orderedWineAmountRegulation.appendChild(plusMinus2);
-            orderedWine.appendChild(orderedWineAmountRegulation);
+            amountAndAllCost.appendChild(orderedWineAmountRegulation);
+            orderedWine.appendChild(orderedWineAllInfo);
             let orderedWineDel = document.createElement('div');
             orderedWineDel.classList.add('ordered-wine-del');
             let orderedWineDelImg = document.createElement('img');
@@ -905,9 +911,9 @@ window.onload = function () {
                     }
                     currentGoodAmount -= 1;
                     amountBlock.innerText = currentGoodAmount.toString();
-                    let thisWineTotalBlock = minuses[i].parentElement.parentElement.childNodes[2].childNodes[1];
+                    let thisWineTotalBlock = minuses[i].parentElement.previousElementSibling.childNodes[1];
                     let orders = JSON.parse(localStorage.getItem('orders'));
-                    let thisWineHeaderBlock = minuses[i].parentElement.parentElement.childNodes[1].childNodes[0];
+                    let thisWineHeaderBlock = minuses[i].parentElement.parentElement.parentElement.childNodes[0].childNodes[0];
                     let thisWineHeader = thisWineHeaderBlock.innerText;
                     for (let j =0; j < orders.length; j++) {
                         if (orders[j].shortName === thisWineHeader) {
@@ -935,9 +941,9 @@ window.onload = function () {
                 }
                 currentGoodAmount += 1;
                 amountBlock.innerText = currentGoodAmount.toString();
-                let thisWineTotalBlock = pluses[i].parentElement.parentElement.childNodes[2].childNodes[1];
+                let thisWineTotalBlock = pluses[i].parentElement.previousElementSibling.childNodes[1];
                 let orders = JSON.parse(localStorage.getItem('orders'));
-                let thisWineHeaderBlock = pluses[i].parentElement.parentElement.childNodes[1].childNodes[0];
+                let thisWineHeaderBlock = pluses[i].parentElement.parentElement.parentElement.childNodes[0].childNodes[0];
                 let thisWineHeader = thisWineHeaderBlock.innerText;
                 for (let j =0; j < orders.length; j++) {
                     if (orders[j].shortName === thisWineHeader) {
@@ -957,7 +963,7 @@ window.onload = function () {
         for (let i = 0; i < closeSigns.length; i++) {
             closeSigns[i].onclick = () => {
                 let orders = JSON.parse(localStorage.getItem('orders'));
-                let thisWineHeaderBlock = closeSigns[i].parentElement.parentElement.childNodes[1].childNodes[0];
+                let thisWineHeaderBlock = closeSigns[i].parentElement.previousElementSibling.childNodes[0].childNodes[0];
                 let thisWhineHeader = thisWineHeaderBlock.innerText;
                 orders = orders.filter(obj => obj.shortName !== thisWhineHeader);
                 localStorage.setItem('orders', JSON.stringify(orders));
@@ -1425,6 +1431,27 @@ window.onload = function () {
         }
         else {
             subscribeInput.style.borderColor = 'red';
+        }
+    }
+
+    //open-close burger menu
+    let burgerIcon = document.getElementById('burger');
+    let burgerMenu = document.getElementById('burger-menu');
+    let burgerClose = document.getElementById('burger-close-popup');
+    let burgerMenuLinks = document.getElementsByClassName('burger-menu-links');
+    burgerIcon.onclick = () => {
+        burgerMenu.style.display = 'block';
+    }
+    function closeBurgerMenu() {
+        burgerMenu.style.display = 'none';
+    }
+    burgerClose.addEventListener('click', closeBurgerMenu);
+    for (let i = 0; i < burgerMenuLinks.length; i++) {
+        burgerMenuLinks[i].addEventListener('click', closeBurgerMenu);
+    }
+    burgerMenu.onclick = (e) => {
+        if (e.target.id === 'burger-menu') {
+            closeBurgerMenu();
         }
     }
 
