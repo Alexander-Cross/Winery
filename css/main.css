@@ -23,6 +23,11 @@ body {
     background: #1e2125;
     color: white;
 }
+#body-container {
+    margin: 0 auto;
+    max-width: 1920px;
+    overflow: hidden;
+}
 .btn-fill {
     background-image: -moz-linear-gradient( 90deg, rgb(207,170,127) 0%, rgb(211,181,140) 46%, rgb(214,191,152) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(207,170,127) 0%, rgb(211,181,140) 46%, rgb(214,191,152) 100%);
