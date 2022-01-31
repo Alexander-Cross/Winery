@@ -23,11 +23,6 @@ body {
     background: #1e2125;
     color: white;
 }
-#body-container {
-    max-width: 1920px;
-    margin: 0 auto;
-    overflow: hidden;
-}
 .btn-fill {
     background-image: -moz-linear-gradient( 90deg, rgb(207,170,127) 0%, rgb(211,181,140) 46%, rgb(214,191,152) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(207,170,127) 0%, rgb(211,181,140) 46%, rgb(214,191,152) 100%);
@@ -404,6 +399,7 @@ header {
     margin-top: 50px;
     margin-bottom: 2px;
     text-align: center;
+    font-size: 0;
 }
 #options .btn-empty {
     font-size: 16px;
@@ -512,20 +508,18 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-#product-price-tag {
+#product-price-tag-and-amount {
+    display: flex;
+    width: calc(100% - 203px);
+    justify-content: space-between;
     font-size: 30px;
     letter-spacing: 0.025em;
     font-family: "Bebas Neue Regular", sans-serif;
     color: #d6bf98;
 }
-#amount-and-action {
-    display: flex;
-    align-items: center;
-}
 #product-amount {
     display: flex;
     align-items: center;
-    margin-right: 33px;
 }
 #philosophy-container {
     max-width: 1200px;
@@ -921,6 +915,7 @@ header {
 }
 #tours-options {
     display: none;
+    font-size: 0;
 }
 #tours-slides {
     max-width: 1098px;
@@ -988,12 +983,15 @@ header {
 }
 #tour-mobile-img-1 {
     background: url("../images/tour-m-1.png") bottom left;
+    background-size: cover;
 }
 #tour-mobile-img-2 {
     background: url("../images/tour-m-2.png") center center;
+    background-size: cover;
 }
 #tour-mobile-img-3 {
     background: url("../images/tour-m-3.png") center center;
+    background-size: cover;
 }
 .tour-info, .tour-image {
     width: 50%;
@@ -1310,7 +1308,7 @@ a.footer-link {
     background-image: -moz-linear-gradient( 90deg, rgb(207,170,127) 0%, rgb(211,181,140) 46%, rgb(214,191,152) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(207,170,127) 0%, rgb(211,181,140) 46%, rgb(214,191,152) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(207,170,127) 0%, rgb(211,181,140) 46%, rgb(214,191,152) 100%);
-    z-index: 3;
+    z-index: 20;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1641,15 +1639,19 @@ a.footer-link {
 }
 #gallery-big-img-1 {
     background: url("../images/gallery/gallery_big_1.png") center center;
+    background-size: cover;
 }
 #gallery-big-img-2 {
     background: url("../images/gallery/gallery_big_2.png") center center;
+    background-size: cover;
 }
 #gallery-big-img-3 {
     background: url("../images/gallery/gallery_big_3.png") center center;
+    background-size: cover;
 }
 #gallery-big-img-4 {
     background: url("../images/gallery/gallery_big_4.png") center center;
+    background-size: cover;
 }
 #gallery-thumbs {
     display: flex;
@@ -1670,15 +1672,19 @@ a.footer-link {
 }
 #gallery-thumb-1 {
     background: url("../images/gallery/gallery_small_1.png") center center;
+    background-size: cover;
 }
 #gallery-thumb-2 {
     background: url("../images/gallery/gallery_small_2.png") center center;
+    background-size: cover;
 }
 #gallery-thumb-3 {
     background: url("../images/gallery/gallery_small_3.png") center center;
+    background-size: cover;
 }
 #gallery-thumb-4 {
     background: url("../images/gallery/gallery_small_4.png") center center;
+    background-size: cover;
 }
 #video-popup-container {
     max-width: 800px;

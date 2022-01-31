@@ -123,7 +123,6 @@ window.onload = function () {
             bestsellerAmount.classList.remove('amount-animation');
         }
     }
-
     //plus-minus amount in the tour section
     let tourAmountMinuses = document.getElementsByClassName('tour-amount-minus');
     for (let i = 0; i < tourAmountMinuses.length; i++) {
@@ -140,7 +139,6 @@ window.onload = function () {
             }
         });
     }
-
     let tourAmountPluses = document.getElementsByClassName('tour-amount-plus');
     for (let i = 0; i < tourAmountPluses.length; i++) {
         tourAmountPluses[i].addEventListener('click', () => {
@@ -373,6 +371,7 @@ window.onload = function () {
             allWine.push(goods[i][j]);
         }
     }
+
     //add-remove active class in price options
     let priceButtons = document.getElementsByClassName('option');
     for (let i = 0; i < priceButtons.length; i++) {
@@ -385,6 +384,7 @@ window.onload = function () {
             }
         });
     }
+
     //price
     let currentImage = document.getElementById('current-price-image');
     let currentHeader = document.getElementById('current-price-header');
@@ -706,7 +706,6 @@ window.onload = function () {
         document.getElementById('basket-amount').innerText = JSON.parse(localStorage.getItem('orders')).length.toString();
     }
 
-
     //add-to-cart in the price section
     let priceActionButton = document.getElementById('price-action-button');
     priceActionButton.addEventListener('click', () => {
@@ -771,7 +770,6 @@ window.onload = function () {
         setAmountInTheBasketIcon();
     });
 
-
     //close pop-ups
     let popupsCloseSign = document.getElementsByClassName('close-popup');
     let popups = document.getElementsByClassName('popup-fon');
@@ -800,6 +798,7 @@ window.onload = function () {
         }
     };
 
+    //everything for basket
     function openBasket() {
         let basketPopup = document.getElementById('open-basket');
         basketPopup.classList.remove('hidden');
@@ -981,25 +980,29 @@ window.onload = function () {
         let orderedWines = document.getElementById('ordered-wines');
         let winesCost = document.getElementsByClassName('ordered-wine-cost');
         let totalCost = document.getElementById('open-basket-total-cost');
+        let screenWidth = window.innerWidth;
         if (basketAmount === 0) {
             noOrders.className = 'info-text';
             orderedWines.style.overflowY = 'hidden';
             totalCost.style.marginRight = '0';
         }
-        else if (basketAmount === 1 || basketAmount === 2) {
+        else if (basketAmount === 1 || (basketAmount === 2 && screenWidth > 630)) {
             noOrders.className = 'hidden';
             orderedWines.style.overflowY = 'hidden';
             for (let i = 0; i < winesCost.length; i++) {
                 winesCost[i].style.marginLeft = '35px';
             }
             totalCost.style.marginRight = '35px';
+        } else if (basketAmount === 2 && screenWidth <= 630) {
+            noOrders.className = 'hidden';
+            orderedWines.style.overflowY = 'scroll';
+            totalCost.style.marginRight = '0';
         } else {
             noOrders.className = 'hidden';
             orderedWines.style.overflowY = 'scroll';
             totalCost.style.marginRight = '0';
         }
     }
-
 
     let basket = document.getElementById('basket');
     basket.addEventListener('click', openBasket);
@@ -1010,7 +1013,6 @@ window.onload = function () {
     basket.addEventListener('click', createEventsOnMinusButtons);
     basket.addEventListener('click', createEventsOnPlusButtons);
     basket.addEventListener('click', createEventsOnCloseSign);
-
 
     //add-remove active class in philosophy steps
     let steps = document.getElementsByClassName('philosophy-step-and-sub-step');
@@ -1055,7 +1057,6 @@ window.onload = function () {
             currentToursSlide(i+1);
         }
     }
-
     document.getElementById('tours_prev').onclick = () => {
         listToursSlides(-1);
     };
@@ -1088,11 +1089,9 @@ window.onload = function () {
         dots[tourSlideIndex-1].classList.add('active');
         tourOptionButtons[tourSlideIndex-1].classList.add('active');
     }
-
     function listToursSlides(n) {
         showToursSlides(tourSlideIndex += n);
     }
-
     function currentToursSlide(n) {
         showToursSlides(tourSlideIndex = n);
     }
@@ -1131,11 +1130,9 @@ window.onload = function () {
         newsSlides[newsSlideIndex-1].className = "blog-news-slide fade-news-animation";
         newsDots[newsSlideIndex-1].classList.add('active');
     }
-
     function listNewsSlides(n) {
         showNewsSlides(newsSlideIndex += n);
     }
-
     function currentNewsSlide (n) {
         showNewsSlides(newsSlideIndex = n);
     }
@@ -1181,7 +1178,6 @@ window.onload = function () {
     blogPrevButton.addEventListener('click', () => {
         listBlogSlides(-1);
     });
-
     blogViewport.addEventListener('scroll', () => {
         let viewportScroll = blogViewport.scrollLeft;
         if (viewportScroll === 0) {
@@ -1203,14 +1199,12 @@ window.onload = function () {
     function listBlogSlides(n) {
         showBlogSlide(blogSlideIndex += n);
     }
-
     function currentBlogSlide(n) {
         showBlogSlide(blogSlideIndex = n);
     }
     function currentBlogSlideMobile(n) {
         showBlogSlideMobile(blogSlideIndex = n);
     }
-
     function makeActiveBlogSliderDots() {
         for (let i =0; i < blogSliderDots.length; i++) {
             if (blogSliderDots[i].classList.contains('active')) {
@@ -1225,7 +1219,6 @@ window.onload = function () {
         }
         blogSliderDotsMobile[blogSlideIndex-1].classList.add('active');
     }
-
     function showBlogSlide(n) {
         if (n > blogSlidesAmount-1) {
             blogSlideIndex = 1;
@@ -1243,7 +1236,6 @@ window.onload = function () {
         }
         makeActiveBlogSliderDots();
     }
-
     function showBlogSlideMobile(n) {
         if (n > blogSlidesAmount-1) {
             blogSlideIndex = 1;
@@ -1261,8 +1253,6 @@ window.onload = function () {
         }
         makeActiveBlogSliderDots();
     }
-
-
 
     //make orders in basket
     let basketButton = document.getElementById('basket-button');
@@ -1331,6 +1321,7 @@ window.onload = function () {
             orderedTourAmount = tourActionAmounts[i].innerText;
         }
     }
+
     // order tour
     let tourOrderButton = document.getElementById('tour-popup-action-btn');
     tourOrderButton.onclick = () => {
