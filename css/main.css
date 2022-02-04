@@ -83,7 +83,7 @@ button.btn-empty {
 button.btn-fill {
     border: none;
 }
-button{
+*{
     -webkit-tap-highlight-color: transparent;
 }
 .round-btn {
