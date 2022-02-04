@@ -84,7 +84,7 @@ button.btn-fill {
     border: none;
 }
 button{
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: #1e2125;
 }
 .round-btn {
     width: 40px;
