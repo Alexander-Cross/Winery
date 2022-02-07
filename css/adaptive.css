@@ -1103,11 +1103,6 @@
         margin-top: 75px;
         margin-bottom: 144px;
     }
-    #glass-of-wine {
-        transform: rotate(29deg);
-        top: 0;
-        right: -426px;
-    }
     #main-actions .btn-empty {
         display: none;
     }
@@ -1459,9 +1454,24 @@
         max-width: 280px;
     }
     #glass-of-wine {
-        top: 10px;
-        right: -305px;
-        width: 818px;
+        display: none;
+    }
+    #glass-of-wine-mobile {
+        position: absolute;
+        display: unset;
+        top: 0;
+        right: -20px;
+        z-index: -1;
+    }
+    #grape {
+        transform: rotate(-13deg);
+        top: 215px;
+        left: -23px;
+        width: 390px;
+    }
+    #main-info h1 {
+        margin-top: 54px;
+        margin-bottom: 108px;
     }
     h2 {
         font-size: 24px;
@@ -1477,6 +1487,10 @@
     }
     #traditions-container h2 {
         max-width: 195px;
+    }
+    #traditions .info-text,
+    #traditions-text-split .info-text:last-child {
+        margin-top: 25px;
     }
     #price-container h2 {
         margin-top: 110px;

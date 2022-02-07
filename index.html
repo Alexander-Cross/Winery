@@ -11,6 +11,7 @@
 </head>
 <body>
 <div id="body-container">
+
 <div id="main">
     <div id="main-container">
         <header>
@@ -23,10 +24,14 @@
                 </div>
                 <div class="logo-clickable">
                     <a href="index.html">
-                        <div class="logo">
-                            <div class="logo-text">
-                                Le Vin<span>Noble</span>
-                            </div>
+                        <div class="logo-image-top">
+                            <img src="images/logo_img_top.png" alt="logo">
+                        </div>
+                        <div class="logo-text">
+                            Le Vin &nbsp<span>Noble</span>
+                        </div>
+                        <div class="logo-image-bottom">
+                            <img src="images/logo_img_bottom.png" alt="logo">
                         </div>
                     </a>
                 </div>
@@ -69,7 +74,8 @@
             </div>
         </div>
         <img src="images/glass.png" id="glass-of-wine" alt="glass of wine">
-        <img src="images/grape_exp.png" id="grape" alt="grape">
+        <img src="images/glass_mobile.png" id="glass-of-wine-mobile" alt="glass of wine">
+        <img src="images/grape_exp3.png" id="grape" alt="grape">
     </div>
 </div>
 
@@ -964,15 +970,19 @@
 
 <footer>
     <div id="footer-container">
-        <img src="images/spring.png" id="spring" alt="leaves">
-        <img src="images/spring2.png" id="spring2" alt="leaves">
+<!--        <img src="images/spring.png" id="spring" alt="leaves">-->
+<!--        <img src="images/spring2.png" id="spring2" alt="leaves">-->
         <div id="footer-logo-and-slogan">
             <div class="logo-clickable">
                 <a href="index.html">
-                    <div class="logo">
-                        <div class="logo-text">
-                            Le Vin<span>Noble</span>
-                        </div>
+                    <div class="logo-image-top">
+                        <img src="images/logo_img_top.png" alt="logo">
+                    </div>
+                    <div class="logo-text">
+                        Le Vin &nbsp<span>Noble</span>
+                    </div>
+                    <div class="logo-image-bottom">
+                        <img src="images/logo_img_bottom.png" alt="logo">
                     </div>
                 </a>
             </div>
@@ -1175,6 +1185,8 @@
     </div>
 </footer>
 
+</div>
+
 <div id="gallery" class="popup-fon hidden">
     <div id="gallery-container">
         <div class="close-popup">
@@ -1225,35 +1237,35 @@
                     <div id="no-orders" class="info-text">
                         Вы пока что ничего не добавили в корзину.
                     </div>
-                    <!--                        <div class="ordered-wine">-->
-                    <!--                            <div class="ordered-wine-img">-->
-                    <!--                                <img src="images/catalog/red-1-s.png" alt="ordered wine bottle">-->
-                    <!--                            </div>-->
-                    <!--                            <div class="ordered-wine-all-info">-->
-                    <!--                                <div class="ordered-wine-info">-->
-                    <!--                                    <div class="ordered-wine-name">-->
-                    <!--                                        Cuvee Prestige-->
-                    <!--                                    </div>-->
-                    <!--                                    <div class="info-text ordered-wine-type-alc">-->
-                    <!--                                        <span>Сухое, красное</span><br>-->
-                    <!--                                        Алк. <span>15%</span>-->
-                    <!--                                    </div>-->
-                    <!--                                </div>-->
-                    <!--                                <div class="amount-and-all-cost">-->
-                    <!--                                    <div class="title-text ordered-wine-cost">-->
-                    <!--                                        €<span id="ordered-wine-1-cost">40</span>-->
-                    <!--                                    </div>-->
-                    <!--                                    <div class="ordered-wine-amount-regulation">-->
-                    <!--                                        <div id="ordered-wine-amount-minus-1" class="plus-minus">-</div>-->
-                    <!--                                        <div id="ordered-wine-amount-1" class="btn-fill btn-fill-small">1</div>-->
-                    <!--                                        <div id="ordered-wine-amount-plus-1" class="plus-minus">+</div>-->
-                    <!--                                    </div>-->
-                    <!--                                </div>-->
-                    <!--                            </div>-->
-                    <!--                            <div class="ordered-wine-del">-->
-                    <!--                                <img src="images/cancel.png" alt="cancel order">-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
+                    <div class="ordered-wine">
+                        <div class="ordered-wine-img">
+                            <img src="images/catalog/red-1-s.png" alt="ordered wine bottle">
+                        </div>
+                        <div class="ordered-wine-all-info">
+                            <div class="ordered-wine-info">
+                                <div class="ordered-wine-name">
+                                    Cuvee Prestige
+                                </div>
+                                <div class="info-text ordered-wine-type-alc">
+                                    <span>Сухое, красное</span><br>
+                                    Алк. <span>15%</span>
+                                </div>
+                            </div>
+                            <div class="amount-and-all-cost">
+                                <div class="title-text ordered-wine-cost">
+                                    €<span id="ordered-wine-1-cost">40</span>
+                                </div>
+                                <div class="ordered-wine-amount-regulation">
+                                    <div id="ordered-wine-amount-minus-1" class="plus-minus">-</div>
+                                    <div id="ordered-wine-amount-1" class="btn-fill btn-fill-small">1</div>
+                                    <div id="ordered-wine-amount-plus-1" class="plus-minus">+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ordered-wine-del">
+                            <img src="images/cancel.png" alt="cancel order">
+                        </div>
+                    </div>
                 </div>
                 <div id="open-basket-total">
                     <div id="open-basket-total-amount" class="title-text">
@@ -1612,14 +1624,14 @@
             <a href="#tours" class="burger-menu-links">Винные туры</a>
         </div>
         <div class="burger-menu-option">
-            <a href="#philosophy" class="burger-menu-links">О нас</a>
+            <a href="#traditions" class="burger-menu-links">О нас</a>
         </div>
         <div class="burger-menu-option">
             <a href="#blog" class="burger-menu-links">Блог</a>
         </div>
     </div>
 </div>
-</div>
+
 <script src="js/main.js"></script>
 <script src="js/wow.min.js"></script>
 </body>

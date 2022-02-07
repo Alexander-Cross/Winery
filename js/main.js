@@ -798,7 +798,7 @@ window.onload = function () {
         }
     };
 
-    //everything for basket
+//     //everything for basket
     function openBasket() {
         let basketPopup = document.getElementById('open-basket');
         basketPopup.classList.remove('hidden');
