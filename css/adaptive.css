@@ -571,6 +571,9 @@
     #news-popup-container {
         width: 380px;
     }
+    .input-error.info-text {
+        margin-left: 75px;
+    }
 }
 /* 576 - 767px */
 @media screen and (max-width: 767px) {
@@ -935,6 +938,18 @@
     }
     #open-basket-action {
         margin-top: 10px;
+    }
+    .input-error.info-text {
+        margin-left: 0;
+    }
+    #input-error-1 {
+        top: 42px;
+    }
+    #input-error-2 {
+        top: 102px;
+    }
+    #input-error-3 {
+        top: 162px;
     }
 }
 /* 541 - 575px */
@@ -1437,6 +1452,15 @@
     #send-error-container .close-popup img{
         width: 11px;
     }
+    #input-error-1 {
+        top: 41px;
+    }
+    #input-error-2 {
+        top: 101px;
+    }
+    #input-error-3 {
+        top: 162px;
+    }
 }
 /* 320 - 374px */
 @media screen and (max-width: 374px) {
@@ -1755,5 +1779,14 @@
     #thank-you-container .info-text, #tour-thank-you-container .info-text {
         max-width: 260px;
         font-size: 14px;
+    }
+    #input-error-1 {
+        top: 39px;
+    }
+    #input-error-2 {
+        top: 94px;
+    }
+    #input-error-3 {
+        top: 150px;
     }
 }

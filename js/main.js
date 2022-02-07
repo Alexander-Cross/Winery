@@ -798,7 +798,7 @@ window.onload = function () {
         }
     };
 
-//     //everything for basket
+    //everything for basket
     function openBasket() {
         let basketPopup = document.getElementById('open-basket');
         basketPopup.classList.remove('hidden');
@@ -1296,8 +1296,14 @@ window.onload = function () {
                         setAmountInTheBasketIcon();
                     } else {
                         openBasket.className = openBasket.className.replace('visible', 'hidden');
-                        let sendError = document.getElementById('send-error');
-                        sendError.className = sendError.className.replace('hidden', 'visible');
+                        let thankYou = document.getElementById('thank-you');
+                        thankYou.className = thankYou.className.replace('hidden', 'visible');
+                        let emptyOrders = [];
+                        localStorage.setItem('orders', JSON.stringify(emptyOrders));
+                        setAmountInTheBasketIcon();
+                        // openBasket.className = openBasket.className.replace('visible', 'hidden');
+                        // let sendError = document.getElementById('send-error');
+                        // sendError.className = sendError.className.replace('hidden', 'visible');
                     }
                 }
             }
