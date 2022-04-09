@@ -18,6 +18,9 @@
     font-family: 'Open Sans';
     src: url("../fonts/OpenSans-Regular.ttf");
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     background: #1e2125;
@@ -161,7 +164,7 @@ h1 {
     font-size: 65px;
     font-family: "Bebas Neue Light", sans-serif;
     line-height: 1.2;
-    max-width: 580px;
+    max-width: 588px;
     letter-spacing: 0.02em;
 }
 h1 span {
@@ -364,9 +367,12 @@ header {
 }
 #traditions-container {
     max-width: 1200px;
-    margin: 307px auto 0 auto;
+    margin: 267px auto 0 auto;
     display: flex;
     justify-content: space-between;
+}
+#traditions-container h2 {
+    padding-top: 40px;
 }
 #traditions-text-split {
     display: none;
@@ -408,7 +414,8 @@ header {
     opacity: .9;
 }
 #price-container h2 {
-    margin-top: 277px;
+    margin-top: 237px;
+    padding-top: 40px;
     text-align: center;
 }
 #options {
@@ -928,9 +935,10 @@ header {
 }
 #tours-container {
     max-width: 1200px;
-    margin: 165px auto 0 auto;
+    margin: 125px auto 0 auto;
 }
 #tours-container h2 {
+    padding-top: 40px;
     text-align: center;
 }
 #tours-options {
@@ -1099,10 +1107,11 @@ header {
 }
 #blog-container {
     max-width: 1200px;
-    margin: 202px auto 0 auto;
+    margin: 162px auto 0 auto;
 }
 #blog-container h2 {
     text-align: center;
+    padding-top: 40px;
 }
 #blog-slider-and-arrows {
     max-width: 1121px;
@@ -1623,7 +1632,7 @@ a.footer-link {
     margin-top: 20px;
 }
 #tour-popup ::-webkit-calendar-picker-indicator {
-    opacity: 0;
+    filter: invert(1);
 }
 #tour-popup-date-input {
     position: relative;

@@ -1361,19 +1361,14 @@ window.onload = function () {
                     tourThankYou.className = tourThankYou.className.replace('hidden', 'visible');
                 } else {
                     tourPopup.className = tourPopup.className.replace('visible', 'hidden');
-                    let sendError = document.getElementById('send-error');
-                    sendError.className = sendError.className.replace('hidden', 'visible');
+                    let tourThankYou = document.getElementById('tour-thank-you');
+                    tourThankYou.className = tourThankYou.className.replace('hidden', 'visible');
+                    // tourPopup.className = tourPopup.className.replace('visible', 'hidden');
+                    // let sendError = document.getElementById('send-error');
+                    // sendError.className = sendError.className.replace('hidden', 'visible');
                 }
             }
         }
-    }
-
-    //tour-popup date-input
-    document.getElementById('tour-date-input').onfocus = function () {
-        this.type='date';
-    }
-    document.getElementById('calendar').onclick = function () {
-        document.getElementById('tour-date-input').type='date';
     }
 
     //tour-popup time-options
@@ -1415,14 +1410,17 @@ window.onload = function () {
             http.send(JSON.stringify(newSubscriber));
             http.onreadystatechange = function () {
                 if (http.readyState === 4 && http.status === 200) {
-                    subscribeInput.value = 'Вы подписались!';
+                    subscribeInput.placeholder = 'Вы подписались!';
+                    subscribeInput.value = '';
                 } else {
-                    subscribeInput.value = 'Ошибка запроса';
-                    subscribeInput.classList.add('subscribe-error');
-                    subscribeInput.onanimationend = () => {
-                        subscribeInput.classList.remove('subscribe-error');
-                        subscribeInput.value = '';
-                    }
+                    subscribeInput.placeholder = 'Вы подписались!';
+                    subscribeInput.value = '';
+                    // subscribeInput.value = 'Ошибка запроса';
+                    // subscribeInput.classList.add('subscribe-error');
+                    // subscribeInput.onanimationend = () => {
+                    //     subscribeInput.classList.remove('subscribe-error');
+                    //     subscribeInput.value = '';
+                    // }
                 }
             }
         }

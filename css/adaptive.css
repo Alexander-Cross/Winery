@@ -248,7 +248,7 @@
         top: 158px;
     }
     #traditions-container {
-        margin-top: 300px;
+        margin-top: 260px;
     }
 }
 /* 1024 - 1069px */
@@ -572,7 +572,7 @@
         width: 380px;
     }
     .input-error.info-text {
-        margin-left: 75px;
+        margin-left: 95px;
     }
 }
 /* 576 - 767px */
@@ -599,7 +599,7 @@
         font-size: 36px;
     }
     #traditions-container {
-        margin-top: 200px;
+        margin-top: 160px;
     }
     #traditions-container h2 {
         max-width: 268px;
@@ -614,7 +614,7 @@
         width: 100%;
     }
     #price-container h2 {
-        margin-top: 200px;
+        margin-top: 160px;
     }
     #options {
         margin-top: 40px;
@@ -640,6 +640,9 @@
     }
     #price .next-btn {
         right: 8px;
+    }
+    #barrels {
+        top: -110px;
     }
     #products-descriptions-mobile h3,
     #year-mobile {
@@ -940,7 +943,7 @@
         margin-top: 10px;
     }
     .input-error.info-text {
-        margin-left: 0;
+        margin-left: 20px;
     }
     #input-error-1 {
         top: 42px;
@@ -1043,6 +1046,7 @@
         scrollbar-width: none; /* for Firefox */
         margin-right: -30px;
         padding-left: 30px;
+        padding-right: 30px;
         margin-left: -30px;
     }
     #options::-webkit-scrollbar {
@@ -1063,6 +1067,7 @@
         scrollbar-width: none; /* for Firefox */
         margin-right: -30px;
         padding-left: 30px;
+        padding-right: 30px;
         margin-left: -30px;
     }
     #tours-options::-webkit-scrollbar {
@@ -1131,7 +1136,7 @@
         font-size: 26px;
     }
     #traditions-container {
-        margin-top: 160px;
+        margin-top: 120px;
     }
     #traditions-container h2 {
         text-align: left;
@@ -1144,7 +1149,7 @@
         margin-top: 10px;
     }
     #price-container h2 {
-        margin: 130px auto 0 auto;
+        margin: 90px auto 0 auto;
         max-width: 258px;
     }
     #products-descriptions-mobile {
@@ -1170,6 +1175,9 @@
     #price .prev-btn,
     #price .next-btn {
         top: 170px;
+    }
+    #barrels {
+        top: -200px;
     }
     #product-characteristics-type {
         max-width: 160px;
@@ -1244,7 +1252,7 @@
         right: -5px;
     }
     #tours-container {
-        margin-top: 130px;
+        margin-top: 90px;
     }
     #tours-container h2 span {
         display: block;
@@ -1308,7 +1316,7 @@
         margin-left: 20px;
     }
     #blog-container {
-        margin-top: 130px;
+        margin-top: 90px;
     }
     #blog-slider {
         display: flex;
@@ -1507,7 +1515,7 @@
         font-size: 14px;
     }
     #traditions-container {
-        margin-top: 120px;
+        margin-top: 80px;
     }
     #traditions-container h2 {
         max-width: 195px;
@@ -1517,7 +1525,7 @@
         margin-top: 25px;
     }
     #price-container h2 {
-        margin-top: 110px;
+        margin-top: 70px;
     }
     #options .btn-empty {
         font-size: 15px;
@@ -1544,6 +1552,9 @@
     }
     #price .prev-btn {
         left: 0;
+    }
+    #barrels {
+        top: -270px;
     }
     .title-text {
         font-size: 16px;
@@ -1630,7 +1641,7 @@
         transform: rotate(19deg);
     }
     #tours-container {
-        margin: 110px 15px 0 15px;
+        margin: 70px 15px 0 15px;
     }
     #tours-options .btn-empty {
         font-size: 15px;
@@ -1664,7 +1675,7 @@
         left: 264px;
     }
     #blog-container {
-        margin-top: 110px;
+        margin-top: 70px;
     }
     #blog-container h2 {
         margin-left: 15px;
